@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BALI CURATED | Villa d'Investissement — Lovina, Bali</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed-dim": "#a5cecd",
+        "on-primary-fixed-variant": "#044f4f",
+        "surface-container-low": "#f3f3f3",
+        "on-tertiary": "#ffffff",
+        "surface-bright": "#f9f9f9",
+        "primary-fixed-dim": "#94d1d1",
+        "outline": "#6f7978",
+        "surface": "#f9f9f9",
+        "tertiary": "#735c00",
+        "secondary": "#3e6565",
+        "on-background": "#1a1c1c",
+        "background": "#f9f9f9",
+        "surface-container-high": "#e8e8e8",
+        "on-tertiary-fixed-variant": "#574500",
+        "error-container": "#ffdad6",
+        "on-primary-container": "#80bdbc",
+        "surface-variant": "#e2e2e2",
+        "tertiary-container": "#cca730",
+        "primary-container": "#004d4d",
+        "surface-container-highest": "#e2e2e2",
+        "on-surface": "#1a1c1c",
+        "secondary-container": "#bee8e7",
+        "on-primary": "#ffffff",
+        "secondary-fixed": "#c1eae9",
+        "on-secondary": "#ffffff",
+        "on-error-container": "#93000a",
+        "tertiary-fixed-dim": "#e9c349",
+        "on-secondary-fixed-variant": "#254d4d",
+        "outline-variant": "#bfc8c8",
+        "on-secondary-fixed": "#002020",
+        "primary-fixed": "#b0eeed",
+        "tertiary-fixed": "#ffe088",
+        "surface-container": "#eeeeee",
+        "on-surface-variant": "#3f4848",
+        "on-secondary-container": "#426969",
+        "inverse-primary": "#94d1d1",
+        "on-tertiary-container": "#4f3e00",
+        "surface-tint": "#296767",
+        "error": "#ba1a1a",
+        "on-primary-fixed": "#002020",
+        "inverse-on-surface": "#f0f1f1",
+        "on-error": "#ffffff",
+        "on-tertiary-fixed": "#241a00",
+        "inverse-surface": "#2f3131",
+        "primary": "#003434",
+        "surface-dim": "#dadada"
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "1rem",
+        "xl": "1.5rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Noto Serif"],
+        "body": ["Manrope"],
+        "label": ["Manrope"]
+      }
+    },
+  },
+}
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; overflow-x: hidden; }
+  .font-serif { font-family: 'Noto Serif', serif; }
+  .hero-gradient { background: linear-gradient(to bottom, rgba(0,52,52,0.3) 0%, rgba(0,52,52,0.05) 40%, rgba(0,52,52,0.85) 100%); }
+  .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(249,249,249,0.85); }
+  .glass-dark { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(0,52,52,0.75); border: 1px solid rgba(255,255,255,0.1); }
+  .gold-line { height: 2px; background: linear-gradient(90deg, transparent, #cca730, transparent); }
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .stat-number { font-family: 'Noto Serif', serif; font-style: italic; line-height: 1; }
+  .parallax-hero { background-attachment: fixed; background-size: cover; background-position: center; }
+  @media (max-width: 768px) {
+    .parallax-hero { background-attachment: scroll; }
+  }
+  .hover-gold { transition: color 0.3s ease, border-color 0.3s ease; }
+  .hover-gold:hover { color: #735c00; }
+  .tag-chip { display: inline-flex; align-items: center; background: #bee8e7; color: #426969; border-radius: 0.75rem; padding: 0.35rem 0.9rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .lease-card { background: linear-gradient(135deg, #003434 0%, #004d4d 100%); border-radius: 1rem; overflow: hidden; position: relative; }
+  .lease-card::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(204,167,48,0.15) 0%, transparent 70%); border-radius: 50%; }
+  .number-stroke { -webkit-text-stroke: 1px #cca730; color: transparent; font-family: 'Noto Serif', serif; font-style: italic; }
+  .border-gold { border-bottom: 2px solid #cca730; }
+  .progress-bar { height: 4px; background: #e2e2e2; border-radius: 9999px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 9999px; background: linear-gradient(90deg, #003434, #cca730); transition: width 1.5s ease; width: 0%; }
+  .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #f9f9f9; z-index: 100; padding: 6rem 2rem 2rem; flex-direction: column; gap: 2rem; }
+  .mobile-menu.open { display: flex; }
+  @media (max-width: 640px) {
+    .hero-title { font-size: clamp(2.5rem, 10vw, 5rem); }
+    .section-title-lg { font-size: clamp(2rem, 8vw, 3.5rem); }
+    .stat-number { font-size: clamp(2.5rem, 10vw, 4rem); }
+  }
+</style>
+</head>
+<body class="text-on-background selection:bg-tertiary-container selection:text-on-tertiary-container">
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="toggleMenu()" class="absolute top-6 right-6 text-primary">
+    <span class="material-symbols-outlined text-3xl">close</span>
+  </button>
+  <a href="#lifestyle" onclick="toggleMenu()" class="font-serif italic text-3xl text-primary border-b border-outline-variant pb-4">Lovina</a>
+  <a href="#villa" onclick="toggleMenu()" class="font-serif italic text-3xl text-primary border-b border-outline-variant pb-4">La Villa</a>
+  <a href="#investissement" onclick="toggleMenu()" class="font-serif italic text-3xl text-primary border-b border-outline-variant pb-4">Investissement</a>
+  <a href="#contact" onclick="toggleMenu()" class="font-serif italic text-3xl text-primary border-b border-outline-variant pb-4">Contact</a>
+  <a href="#contact" onclick="toggleMenu()" class="mt-4 bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-center">Demander le Dossier Exclusif</a>
+</div>
+
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20">
+  <nav class="flex justify-between items-center w-full px-6 md:px-8 py-4 max-w-screen-2xl mx-auto">
+    <div class="text-xl font-serif font-bold tracking-tighter text-primary">BALI CURATED</div>
+    <div class="hidden md:flex gap-8 items-center">
+      <a href="#lifestyle" class="text-on-surface-variant hover-gold font-medium tracking-wide text-sm transition-colors duration-300">Lovina</a>
+      <a href="#villa" class="text-on-surface-variant hover-gold font-medium tracking-wide text-sm transition-colors duration-300">La Villa</a>
+      <a href="#investissement" class="text-on-surface-variant hover-gold font-medium tracking-wide text-sm transition-colors duration-300">Investissement</a>
+      <a href="#projet" class="text-on-surface-variant hover-gold font-medium tracking-wide text-sm transition-colors duration-300">Le Projet</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden md:block bg-primary text-on-primary px-6 py-3 rounded-full font-medium tracking-wide hover:bg-primary-container transition-all duration-300 text-sm active:scale-95">
+        Dossier Exclusif — Gratuit
+      </a>
+      <button onclick="toggleMenu()" class="md:hidden text-primary p-2">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section class="relative h-screen w-full flex items-end overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoJkVAHQ_-gmdiktnqjlXpu6mqfk7cNcpT9U0eWEBc--rhnfea3mvY7bqPGVn87y1kPM8fDT2skvsFD3uQM7aAuKGKe3KRA3-6IeKoVgg5gfEY26dEfu5cDXtCrus20VRE-VFnpAn4vZyfYx3YVSr6tJ1Wb2tOU58GW9Y_FZQJewTuhc2DQaYZd-OIq-ue9wNKDPfbZ5W5fAg2v0S4dJfTFFWGFizNz63cFAsKmi7mHjG2qQBFscFOUW0E3S45fAIFjG54rUFkfIw" alt="Villa de luxe à Bali avec piscine à débordement"/>
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+
+  <!-- Floating badge top-right — urgence + rareté -->
+  <div class="absolute top-24 right-6 md:right-12 z-10 glass-dark rounded-lg px-4 py-3 text-right hidden sm:block">
+    <p class="text-tertiary-container font-bold text-sm uppercase tracking-widest mb-1">2 lots restants</p>
+    <p class="text-surface font-serif italic text-2xl">12.5%</p>
+    <p class="text-surface/50 text-xs">ROI brut / an certifié</p>
+  </div>
+
+  <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 md:px-8 pb-20 md:pb-28">
+    <div class="max-w-3xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="gold-line w-12"></div>
+        <span class="text-tertiary-container font-medium tracking-widest text-xs uppercase">Lovina, Bali Nord — Livraison 2026</span>
+      </div>
+      <h1 class="hero-title font-serif italic text-surface mb-6 leading-tight" style="font-size: clamp(2.8rem, 7vw, 5.5rem);">
+        $8 200 par mois.<br/>Passive. Garantie.<br/>Vous ne gérez rien.
+      </h1>
+      <p class="font-sans text-lg text-surface/80 max-w-xl mb-10 font-light leading-relaxed">
+        320m² · vue mer · piscine infinity. Revenus Airbnb opérationnels dès la livraison — ou loyer garanti contractuellement via Master Lease.<br class="hidden md:block"/>Lovina, Bali Nord : le dernier marché sous-valorisé de l'île. <strong class="text-tertiary-container font-semibold">2 lots restants.</strong>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <a href="#contact" class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-full font-bold hover:opacity-90 transition-all active:scale-95 text-sm md:text-base">
+          Recevoir le Dossier Investisseur — Gratuit
+        </a>
+        <a href="#investissement" class="text-surface font-sans flex items-center gap-2 group text-sm">
+          <span class="border-b border-surface/40 pb-1 group-hover:border-surface transition-all">Voir les projections sur 5 ans</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
+    <div class="w-px h-12 bg-surface/60" style="animation: pulse 2s infinite;"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ STATS BAR ═══════════════════════════════════ -->
+<section class="bg-primary py-8 md:py-10 overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 divide-x-0 md:divide-x divide-white/10">
+      <div class="text-center reveal">
+        <p class="stat-number text-tertiary-container mb-1" style="font-size: clamp(2rem, 5vw, 3rem);">12.5%</p>
+        <p class="text-surface/60 text-xs uppercase tracking-widest">ROI Brut / An</p>
+        <p class="text-surface/30 text-xs mt-1">vs 3% livret A</p>
+      </div>
+      <div class="text-center md:pl-8 reveal reveal-delay-1">
+        <p class="stat-number text-tertiary-container mb-1" style="font-size: clamp(2rem, 5vw, 3rem);">$8.2k</p>
+        <p class="text-surface/60 text-xs uppercase tracking-widest">Revenus Nets / Mois</p>
+        <p class="text-surface/30 text-xs mt-1">virés automatiquement</p>
+      </div>
+      <div class="text-center md:pl-8 reveal reveal-delay-2">
+        <p class="stat-number text-tertiary-container mb-1" style="font-size: clamp(2rem, 5vw, 3rem);">74%</p>
+        <p class="text-surface/60 text-xs uppercase tracking-widest">Taux d'Occupation</p>
+        <p class="text-surface/30 text-xs mt-1">données marchés auditées</p>
+      </div>
+      <div class="text-center md:pl-8 reveal reveal-delay-3">
+        <p class="stat-number text-tertiary-container mb-1" style="font-size: clamp(2rem, 5vw, 3rem);">+20%</p>
+        <p class="text-surface/60 text-xs uppercase tracking-widest">Valorisation Foncière / An</p>
+        <p class="text-surface/30 text-xs mt-1">+60–80% à 5 ans</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ LIFESTYLE — LOVINA ═══════════════════════════════════ -->
+<section id="lifestyle" class="py-20 md:py-32 bg-surface overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+      <!-- Text -->
+      <div class="md:col-span-5 order-2 md:order-1">
+        <span class="tag-chip mb-6 inline-block">Bali Nord — Marché Émergent</span>
+        <h2 class="section-title-lg font-serif italic text-primary mb-6 leading-tight reveal" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+          Lovina :<br/>ce que Canggu<br/>était avant.
+        </h2>
+        <p class="text-on-surface-variant text-base leading-relaxed mb-8 reveal reveal-delay-1">
+          Canggu était encore abordable en 2014. Ceux qui ont acheté ont vu leur capital tripler. Aujourd'hui, Lovina est exactement là où était Canggu il y a dix ans — intacte, sous-évaluée, et sur le point d'exploser. Plages noires. Dauphins sauvages. Zéro sur-construction. Des actifs encore <strong>40% sous le prix du Sud</strong> — pour combien de temps encore ?
+        </p>
+        <div class="space-y-5 mb-10">
+          <div class="flex items-start gap-4 reveal reveal-delay-1">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-1">
+              <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">eco</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-primary mb-1">Rareté naturelle</h4>
+              <p class="text-sm text-on-surface-variant">Montagnes volcaniques, récifs coralliens intacts. Un cadre que l'argent ne peut pas créer — et que la sur-construction ne peut pas reproduire.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal reveal-delay-2">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-1">
+              <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">waves</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-primary mb-1">Clientèle HNW en hausse</h4>
+              <p class="text-sm text-on-surface-variant">Observation de dauphins, plongée de luxe, voile privée. La cible premium qui paie $450/nuit sans négocier migre vers le Nord.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 reveal reveal-delay-3">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-1">
+              <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">trending_up</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-primary mb-1">La fenêtre se ferme</h4>
+              <p class="text-sm text-on-surface-variant">+20% de valorisation foncière projetée. Étude d'aéroport en cours. Les institutionnels arrivent. Vous pouvez entrer avant eux — ou après.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="md:col-span-6 md:col-start-7 order-1 md:order-2 reveal">
+        <div class="relative">
+          <img class="rounded-lg w-full object-cover" style="aspect-ratio:4/5; max-height:70vh; object-fit:cover;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzlUVFe5PgNM5zQLW2wWajdKG_Eisw4_BynqeaWxza4pP1hYyp0Qp3L0aGhhBPDweBHwTq25b_g64vboNP9Tw6Jika2NRiyWjAsNUrDHnKGSj-WMftSrYpf-ayykWirNE7RALvoju0KrHjBCmOjUDOnAHE1XjzTm8QiR2NgcQ_VxLFG40_X2N2yhj8m0RZ5C6AqbmPhXyJVR-YR1vNRJpw0QC4_ezG5NxNMdeUalLZUs-rXMHdj1QBrZRwjSSLcpe_Hb85iunPQxw" alt="Côte de Lovina, Bali"/>
+          <div class="absolute -bottom-6 -left-4 md:-bottom-10 md:-left-10 bg-primary p-6 md:p-10 rounded-lg text-surface max-w-xs hidden sm:block">
+            <p class="font-serif italic text-xl md:text-2xl mb-1">"Le dernier Bali authentique."</p>
+            <p class="text-xs uppercase tracking-widest text-surface/50">Là où le rendement rencontre le sens</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ VILLA SHOWCASE ═══════════════════════════════════ -->
+<section id="villa" class="py-20 md:py-32 bg-surface-container-low overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 md:mb-20 gap-4">
+      <div class="max-w-2xl">
+        <span class="tag-chip mb-4 inline-block">Architecture Signature</span>
+        <h2 class="font-serif italic text-primary leading-tight reveal" style="font-size: clamp(2rem, 5vw, 3.75rem);">Une villa qui<br/>se loue seule.</h2>
+      </div>
+      <div class="text-left md:text-right reveal">
+        <p class="text-primary font-bold text-lg">4 espaces de vie · 320m²</p>
+        <p class="text-on-surface-variant text-sm">Piscine 12m · Vue mer & montagne · Livraison 2026</p>
+      </div>
+    </div>
+
+    <!-- Gallery grid — staggered -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      <div class="group relative overflow-hidden rounded-lg" style="aspect-ratio:3/4;">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBijbAe3M6zLgk_llbZvtJ_nmiV2_LAfg4YJeZIrfyrgvjDwuYDMrUsxTSAbseePg-WE4PBJquFKKC7k4LSSpiOf6bSh122TUU-vRfYPRaFlizzGqR3AI_IkGwsCXL1CUUwm7Hqxc0XsWYUSJzH-HZfienm9pX0ya8mFKlpV9iKF6Dc6ClJ8FGImNXev3XLLZuo3mhluzZRX9lJVv-9TO9tF3jnOyDn62QANk22bzJkOhppd52BxMwfFA4kfwGyxpIfVbWcmEWVq6Q" alt="Séjour ouvert"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-5 flex flex-col justify-end">
+          <h3 class="text-surface font-serif text-lg md:text-2xl">Séjour</h3>
+          <p class="text-surface/70 text-xs hidden sm:block">Intérieur–extérieur sans rupture</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg md:mt-12" style="aspect-ratio:3/4;">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4DL_DvGputklIIVg57VxesUKvWRlG0AdHoYmw6Jx4LLvwm-jR1AffyGrGFTI_qPePIi4TDL9GHGzUH5KCQii4n6hc9O8aDSXj34_-qYqDqU4YlbQ5X2IX7SdkIBqPSGe1aASSH9aWb5T1qJ2dwzqiigqyjFGCRGSGdSiFlkgRLVmYPKlIjOKP_mMUpaGS87vjRC4bsp3kHryWHzzlUfeX3A8UClnrLqAK9mYP4lyKv7SZg9W2-EOZaGpgbDlTF7SnypsKTR2p_gg" alt="Piscine infinity"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-5 flex flex-col justify-end">
+          <h3 class="text-surface font-serif text-lg md:text-2xl">Piscine Infinity</h3>
+          <p class="text-surface/70 text-xs hidden sm:block">Basalte noir · 12 mètres · Vue mer</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg md:mt-24" style="aspect-ratio:3/4;">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYA25rg_eNh6JCQh5PENMuV0Lpgr_IY_msdrS_xeh1GbY2vhVrK80xxnBYTx9aR4jWZcCWA5ejXDKpkQKpXuCCywwnwL7ModHs71X93-KQRLIRozzS0rGh-8LhCPvUJmK0Qt7Ow8AvcoY0VTh4NZlCp-YOWnzWUUYHeni52LrgyOwCdgC4cGJg-kdXqkO2Rp2hwYhG8YyvgatRtNZogAZIlXAtz--okTXfUcFvXQW_MO7novYQIdJ4_XNusvHy6MMSYlYROT9botw" alt="Suite master"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-5 flex flex-col justify-end">
+          <h3 class="text-surface font-serif text-lg md:text-2xl">Suite Master</h3>
+          <p class="text-surface/70 text-xs hidden sm:block">Panorama mer · accès direct piscine</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg md:mt-36" style="aspect-ratio:3/4;">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_f_BKj2PrIxEi3gmrreMdTC04Xk_SY4lYy5pOi-PJnIPlG99zGO1tA3zzbXnwODzKy-o5pSdCbE0C5cqPjXT29jyIYzeOwLRUCjzQQl7YHTJF102y08kR1LXpuLvhU7ET7eRowe5KJ7JmA3NlQwCxrMwfJTUQJWmoz1zL-glBQyxubxdQB03Uh6GsmgREZkDBtWmOiO9gJQ4jnOfWdkcQ2YSSU2qcQ2U8rdmJ367Sw-mMYD0rb0jsL4oXmrrkC6g6SVvWwXJbhU" alt="Cuisine gourmet"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-5 flex flex-col justify-end">
+          <h3 class="text-surface font-serif text-lg md:text-2xl">Espace Gourmet</h3>
+          <p class="text-surface/70 text-xs hidden sm:block">Marbre noir · bois massif local</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Villa specs -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 md:mt-16">
+      <div class="bg-surface rounded-lg p-5 text-center reveal">
+        <p class="font-serif italic text-3xl text-primary mb-1">4</p>
+        <p class="text-xs text-on-surface-variant uppercase tracking-widest">Suites Privatives</p>
+      </div>
+      <div class="bg-surface rounded-lg p-5 text-center reveal reveal-delay-1">
+        <p class="font-serif italic text-3xl text-primary mb-1">320m²</p>
+        <p class="text-xs text-on-surface-variant uppercase tracking-widest">Surface Habitable</p>
+      </div>
+      <div class="bg-surface rounded-lg p-5 text-center reveal reveal-delay-2">
+        <p class="font-serif italic text-3xl text-primary mb-1">12m</p>
+        <p class="text-xs text-on-surface-variant uppercase tracking-widest">Piscine Infinity</p>
+      </div>
+      <div class="bg-surface rounded-lg p-5 text-center reveal reveal-delay-3">
+        <p class="font-serif italic text-3xl text-primary mb-1">Mer</p>
+        <p class="text-xs text-on-surface-variant uppercase tracking-widest">Vue 180° & Montagne</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ INVESTISSEMENT ═══════════════════════════════════ -->
+<section id="investissement" class="py-20 md:py-32 bg-primary overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="text-center mb-12 md:mb-20">
+      <span class="text-tertiary-container font-medium tracking-widest text-xs uppercase mb-4 block">Analyse Financière</span>
+      <h2 class="font-serif italic text-surface leading-tight reveal" style="font-size: clamp(2rem, 5vw, 3.75rem);">
+        Ce que votre banque<br/>ne vous offrira<br/>jamais.
+      </h2>
+      <p class="text-surface/60 mt-4 max-w-xl mx-auto">12.5% brut. $8 200/mois nets. +60% de capital à 5 ans. Trois flux de valeur simultanés — cash-flow, valorisation, fiscalité. Documentés. Auditables. Contractuels.</p>
+    </div>
+
+    <!-- ROI Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10">
+      <div class="bg-primary-container rounded-xl p-6 md:p-8 reveal">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings:'FILL' 1;">bar_chart</span>
+          </div>
+          <span class="text-surface/60 text-xs uppercase tracking-widest">ROI Brut Annuel</span>
+        </div>
+        <p class="font-serif italic text-6xl text-tertiary-container mb-3">12.5%</p>
+        <p class="text-surface/50 text-sm leading-relaxed">74% d'occupation · $450/nuit · données issues de villas comparables actives à Lovina. Bali Sud plafonne à 8–9%. Vous entrez au-dessus du marché.</p>
+        <div class="progress-bar mt-6"><div class="progress-fill" style="--target-width: 85%;"></div></div>
+        <p class="text-surface/30 text-xs mt-2">Bali Sud : 8–9% · Lovina : 12.5% — et la courbe monte.</p>
+      </div>
+      <div class="bg-primary-container rounded-xl p-6 md:p-8 reveal reveal-delay-1">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings:'FILL' 1;">payments</span>
+          </div>
+          <span class="text-surface/60 text-xs uppercase tracking-widest">Revenu Mensuel Net</span>
+        </div>
+        <p class="font-serif italic text-6xl text-tertiary-container mb-3">$8.2k</p>
+        <p class="text-surface/50 text-sm leading-relaxed">Revenus nets après commissions de gestion et charges locales. Virés sur votre compte. Chaque mois. Que vous soyez à Paris, Dubai ou Los Angeles — aucune intervention requise.</p>
+        <div class="progress-bar mt-6"><div class="progress-fill" style="--target-width: 74%;"></div></div>
+        <p class="text-surface/30 text-xs mt-2">$98 400 / an · $492 000 sur 5 ans</p>
+      </div>
+      <div class="bg-primary-container rounded-xl p-6 md:p-8 reveal reveal-delay-2">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings:'FILL' 1;">real_estate_agent</span>
+          </div>
+          <span class="text-surface/60 text-xs uppercase tracking-widest">Valorisation Foncière</span>
+        </div>
+        <p class="font-serif italic text-6xl text-tertiary-container mb-3">+20%</p>
+        <p class="text-surface/50 text-sm leading-relaxed">Appréciation annuelle projetée, portée par les infrastructures en cours, l'aéroport Nord en étude, et l'afflux de capitaux institutionnels. Les institutionnels arrivent — vous pouvez entrer avant eux.</p>
+        <div class="progress-bar mt-6"><div class="progress-fill" style="--target-width: 90%;"></div></div>
+        <p class="text-surface/30 text-xs mt-2">$420k investis → $700k+ de valeur à 5 ans</p>
+      </div>
+    </div>
+
+    <!-- 5-year projection table -->
+    <div class="bg-primary-container rounded-xl p-6 md:p-10 mb-4">
+      <p class="text-tertiary-container font-bold uppercase tracking-widest text-xs mb-6">Projection sur 5 ans · Base $420 000 investis</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-white/10">
+              <th class="text-left text-surface/40 font-medium pb-3 pr-6">Année</th>
+              <th class="text-right text-surface/40 font-medium pb-3 pr-6">Revenus nets cumulés</th>
+              <th class="text-right text-surface/40 font-medium pb-3 pr-6">Valeur estimée du bien</th>
+              <th class="text-right text-surface/40 font-medium pb-3">Patrimoine total</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5">
+            <tr>
+              <td class="py-3 pr-6 text-surface/60">An 1</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$98 400</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$504 000</td>
+              <td class="py-3 text-right text-tertiary-container font-bold">$602 400</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6 text-surface/60">An 2</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$196 800</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$604 800</td>
+              <td class="py-3 text-right text-tertiary-container font-bold">$801 600</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6 text-surface/60">An 3</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$295 200</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$725 760</td>
+              <td class="py-3 text-right text-tertiary-container font-bold">$1 020 960</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6 text-surface/60">An 5</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$492 000</td>
+              <td class="py-3 pr-6 text-right text-surface font-medium">$1 046 093</td>
+              <td class="py-3 text-right text-tertiary-container font-bold text-base">$1 538 093</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-surface/20 text-xs mt-4">Projections indicatives basées sur 74% d'occupation, $450/nuit, +20%/an de valorisation foncière. Non contractuelles.</p>
+    </div>
+
+    <!-- Strategies -->
+    <div class="bg-primary-container rounded-xl p-6 md:p-10">
+      <p class="text-tertiary-container font-bold uppercase tracking-widest text-xs mb-6">Trois stratégies. Choisissez la vôtre.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0 md:pr-6">
+          <p class="font-serif italic text-xl text-surface mb-1">Airbnb Optimisé</p>
+          <p class="text-tertiary-container text-xs font-bold uppercase tracking-widest mb-3">jusqu'à $8 200/mois</p>
+          <p class="text-surface/50 text-sm">Revenus maximisés selon les saisons haute et basse. Gestion 100% déléguée — pricing dynamique, accueil voyageurs, ménage, maintenance. Vous regardez les virements arriver.</p>
+        </div>
+        <div class="border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0 md:px-6">
+          <p class="font-serif italic text-xl text-surface mb-1">Master Lease Garanti</p>
+          <p class="text-tertiary-container text-xs font-bold uppercase tracking-widest mb-3">$4 200 fixes / mois</p>
+          <p class="text-surface/50 text-sm">Loyer contractuel garanti, indépendant du taux d'occupation. Zéro variable, zéro surprise. Le revenu prévisible pour l'investisseur qui veut dormir tranquille — quoi qu'il arrive.</p>
+        </div>
+        <div class="md:pl-6">
+          <p class="font-serif italic text-xl text-surface mb-1">Revente Premium</p>
+          <p class="text-tertiary-container text-xs font-bold uppercase tracking-widest mb-3">+60–80% à 5 ans</p>
+          <p class="text-surface/50 text-sm">Vous encaissez 5 ans de loyers ET revendez avec une plus-value substantielle. $420k investis peuvent devenir $1M+ de patrimoine. C'est le double levier de l'immobilier premium.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ MASTER LEASE ═══════════════════════════════════ -->
+<section class="py-20 md:py-32 bg-surface overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <!-- Left: Explanation -->
+      <div class="reveal">
+        <span class="tag-chip mb-6 inline-block">Option Premium · Zéro Contrainte</span>
+        <h2 class="font-serif italic text-primary leading-tight mb-6" style="font-size: clamp(2rem, 4.5vw, 3.5rem);">
+          Vous signez.<br/>Vous encaissez.<br/>Vous n'intervenez jamais.
+        </h2>
+        <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+          Le Master Lease, c'est l'immobilier tel qu'il devrait toujours fonctionner. Pas de locataires. Pas de nuits vides. Pas de coups de téléphone à 23h. Un loyer fixe — signé, garanti, versé chaque mois sur votre compte — que la villa soit pleine ou non.
+        </p>
+        <div class="space-y-4 mb-10">
+          <div class="flex items-start gap-4">
+            <div class="number-stroke text-4xl font-serif shrink-0 w-10" style="-webkit-text-stroke: 1.5px #cca730; color: transparent;">01</div>
+            <div class="pt-2">
+              <h4 class="font-bold text-primary mb-1">Vous signez. Vous devenez propriétaire.</h4>
+              <p class="text-sm text-on-surface-variant">Acquisition sécurisée via structure HGB. Notaires et avocats spécialisés Indonésie. Chaque document audité avant signature. Vous êtes propriétaire — vraiment, légalement, sereinement.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="number-stroke text-4xl font-serif shrink-0 w-10" style="-webkit-text-stroke: 1.5px #cca730; color: transparent;">02</div>
+            <div class="pt-2">
+              <h4 class="font-bold text-primary mb-1">Notre équipe prend le relais — immédiatement.</h4>
+              <p class="text-sm text-on-surface-variant">Réservations, entretien, accueil des voyageurs, incidents. Notre équipe locale gère tout, 7j/7. Vous n'intervenez jamais.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="number-stroke text-4xl font-serif shrink-0 w-10" style="-webkit-text-stroke: 1.5px #cca730; color: transparent;">03</div>
+            <div class="pt-2">
+              <h4 class="font-bold text-primary mb-1">$4 200 arrivent sur votre compte. Chaque mois.</h4>
+              <p class="text-sm text-on-surface-variant">Loyer contractuel garanti. Peu importe le taux d'occupation réel. Peu importe la saison. C'est écrit. C'est signé. C'est vôtre.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 text-tertiary font-bold border-b-2 border-tertiary pb-1 hover:opacity-80 transition-opacity">
+          Recevoir la simulation complète du Master Lease
+          <span class="material-symbols-outlined text-base">north_east</span>
+        </a>
+      </div>
+
+      <!-- Right: Lease card -->
+      <div class="reveal reveal-delay-1">
+        <div class="lease-card p-6 md:p-10">
+          <p class="text-tertiary-container font-bold uppercase tracking-widest text-xs mb-8">Simulation Master Lease · Exemple réel</p>
+          <div class="space-y-6 mb-8">
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+              <p class="text-surface/60 text-sm">Prix d'acquisition</p>
+              <p class="text-surface font-bold">$420 000</p>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+              <p class="text-surface/60 text-sm">Loyer garanti mensuel</p>
+              <p class="text-tertiary-container font-bold text-lg">$4 200 / mois</p>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+              <p class="text-surface/60 text-sm">Durée du contrat</p>
+              <p class="text-surface font-bold">5 ans renouvelables</p>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+              <p class="text-surface/60 text-sm">Rendement garanti</p>
+              <p class="text-tertiary-container font-bold text-lg">~12% / an · contractuel</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-surface/60 text-sm">Gestion propriété</p>
+              <p class="text-surface font-bold">100% déléguée · 0 intervention</p>
+            </div>
+          </div>
+          <a href="#contact" class="block w-full bg-tertiary-container text-on-tertiary-container text-center py-4 rounded-full font-bold hover:opacity-90 transition-opacity active:scale-95 text-sm">
+            Je veux cette simulation personnalisée →
+          </a>
+          <p class="text-surface/30 text-xs text-center mt-4">Dossier complet sur demande · confidentiel · sans engagement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ POURQUOI LOVINA ═══════════════════════════════════ -->
+<section class="py-20 md:py-32 bg-surface-container-low overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-16">
+      <div class="lg:col-span-1">
+        <span class="tag-chip mb-4 inline-block">Analyse de Marché</span>
+        <h2 class="font-serif italic text-primary leading-tight mb-6 reveal" style="font-size: clamp(2rem, 4.5vw, 3rem);">
+          Pourquoi Lovina ?<br/>Pourquoi maintenant ?<br/>Pourquoi pas demain.
+        </h2>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+          Le cycle est connu : les pionniers entrent avant la masse, capturent la valorisation, et revendent à ceux qui ont attendu. Bali Sud a eu son cycle. Lovina est au début du sien.
+        </p>
+        <a href="#contact" class="text-tertiary font-bold flex items-center gap-2 group text-sm">
+          <span class="border-b-2 border-tertiary pb-1">Accéder au rapport de marché complet</span>
+          <span class="material-symbols-outlined text-base">north_east</span>
+        </a>
+      </div>
+      <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-surface rounded-xl p-6 md:p-8 reveal">
+          <span class="material-symbols-outlined text-3xl text-tertiary mb-4 block" style="font-variation-settings:'FILL' 1;">trending_up</span>
+          <h4 class="font-serif text-xl text-primary mb-3">Prix encore accessibles</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Lovina affiche +20%/an sur 3 ans avec des actifs encore 40% sous Canggu. Le marché duplique exactement le parcours de Canggu il y a dix ans.</p>
+        </div>
+        <div class="bg-surface rounded-xl p-6 md:p-8 reveal reveal-delay-1">
+          <span class="material-symbols-outlined text-3xl text-tertiary mb-4 block" style="font-variation-settings:'FILL' 1;">flight</span>
+          <h4 class="font-serif text-xl text-primary mb-3">Infrastructure en cours</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Étude de faisabilité aéroport Nord en cours. Routes élargies. Accès direct depuis Denpasar amélioré. Ce type de projet multiplie les valorisations.</p>
+        </div>
+        <div class="bg-surface rounded-xl p-6 md:p-8 reveal reveal-delay-2">
+          <span class="material-symbols-outlined text-3xl text-tertiary mb-4 block" style="font-variation-settings:'FILL' 1;">verified_user</span>
+          <h4 class="font-serif text-xl text-primary mb-3">Structure d'acquisition sécurisée</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">HGB pour investisseurs étrangers. Notaires et avocats spécialisés Indonesia. Transparence totale sur la propriété — rien n'est laissé au hasard.</p>
+        </div>
+        <div class="bg-surface rounded-xl p-6 md:p-8 reveal reveal-delay-3">
+          <span class="material-symbols-outlined text-3xl text-tertiary mb-4 block" style="font-variation-settings:'FILL' 1;">nest_eco</span>
+          <h4 class="font-serif text-xl text-primary mb-3">Hub Wellness Premium</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Lovina devient la destination de référence du tourisme wellness Bali. Clientèle HNW internationale. $450/nuit sans négociation. Le profil d'hôte idéal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PROJET GLOBAL ═══════════════════════════════════ -->
+<section id="projet" class="py-20 md:py-32 bg-surface overflow-hidden">
+  <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div class="reveal">
+        <span class="tag-chip mb-6 inline-block">Notre Vision</span>
+        <h2 class="font-serif italic text-primary leading-tight mb-6" style="font-size: clamp(2rem, 4.5vw, 3.5rem);">
+          Un écosystème.<br/>Pas un promoteur.
+        </h2>
+        <p class="text-on-surface-variant leading-relaxed mb-8">
+          Bali Curated sélectionne, conçoit et exploite chaque villa comme un actif premium à part entière. Standards suisses de gestion. Ancrage balinais authentique. Reporting mensuel. Aucune approximation.
+        </p>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="text-center bg-surface-container rounded-xl p-4">
+            <p class="font-serif italic text-3xl text-primary mb-1">6</p>
+            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Villas</p>
+          </div>
+          <div class="text-center bg-surface-container rounded-xl p-4">
+            <p class="font-serif italic text-3xl text-primary mb-1">3</p>
+            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Hectares</p>
+          </div>
+          <div class="text-center bg-surface-container rounded-xl p-4">
+            <p class="font-serif italic text-3xl text-primary mb-1">2026</p>
+            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Livraison</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="relative">
+          <img class="rounded-xl w-full object-cover" style="aspect-ratio:4/3; object-fit:cover;" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBijbAe3M6zLgk_llbZvtJ_nmiV2_LAfg4YJeZIrfyrgvjDwuYDMrUsxTSAbseePg-WE4PBJquFKKC7k4LSSpiOf6bSh122TUU-vRfYPRaFlizzGqR3AI_IkGwsCXL1CUUwm7Hqxc0XsWYUSJzH-HZfienm9pX0ya8mFKlpV9iKF6Dc6ClJ8FGImNXev3XLLZuo3mhluzZRX9lJVv-9TO9tF3jnOyDn62QANk22bzJkOhppd52BxMwfFA4kfwGyxpIfVbWcmEWVq6Q" alt="Vue du projet global"/>
+          <div class="absolute top-4 right-4 bg-primary/90 backdrop-blur rounded-lg px-4 py-3">
+            <p class="text-tertiary-container text-xs uppercase tracking-widest font-bold mb-1">Phase 1 · En construction</p>
+            <p class="text-surface font-serif italic">2 lots disponibles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ RASSURANCE ═══════════════════════════════════ -->
+<section class="py-20 md:py-32 bg-surface-container-low overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 md:px-8 text-center">
+    <span class="tag-chip mb-6 inline-block">Notre Engagement</span>
+    <h2 class="font-serif italic text-primary mb-6 reveal" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+      Exigence.<br/>Transparence.<br/>Résultats.
+    </h2>
+    <p class="text-on-surface-variant text-base leading-relaxed mb-12 max-w-2xl mx-auto reveal reveal-delay-1">
+      Bali Curated n'est pas une agence qui vend puis disparaît. Nous sommes copropriétaires de l'écosystème. Notre intérêt est aligné avec le vôtre — et ça change tout.
+    </p>
+    <!-- Trust pillars -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+      <div class="bg-surface rounded-xl p-6 text-left reveal">
+        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">shield_check</span>
+        </div>
+        <h4 class="font-bold text-primary mb-2">Sécurité Juridique Totale</h4>
+        <p class="text-on-surface-variant text-sm">Structure HGB 100% conforme. Notaires et avocats spécialisés Indonesia. Chaque document est audité avant signature. Zéro zone grise.</p>
+      </div>
+      <div class="bg-surface rounded-xl p-6 text-left reveal reveal-delay-1">
+        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">monitoring</span>
+        </div>
+        <h4 class="font-bold text-primary mb-2">Dashboard Temps Réel</h4>
+        <p class="text-on-surface-variant text-sm">Accès investisseur 24/7. Revenus, taux d'occupation, rapports mensuels détaillés. Vous voyez exactement ce que vous avez — en temps réel.</p>
+      </div>
+      <div class="bg-surface rounded-xl p-6 text-left reveal reveal-delay-2">
+        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">support_agent</span>
+        </div>
+        <h4 class="font-bold text-primary mb-2">Équipe Locale · 7j/7</h4>
+        <p class="text-on-surface-variant text-sm">Property manager dédié sur place. Maintenance, accueil voyageurs, incidents — résolu avant que vous n'ayez eu à demander. C'est notre promesse.</p>
+      </div>
+    </div>
+    <!-- Partner logos -->
+    <div class="flex flex-wrap justify-center gap-8 md:gap-12 grayscale opacity-50">
+      <img class="h-7 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQdIYt9tijfuRTOQzu5LdHswFK8BCRtqwTbVz3cFr4tMIo9e99iGm7gFT4O2KsBElW1pd3qRtacnCgzv12w9np59nBwUPR1y5O3w48BW427mpqUZMSQ01Vc6n2wsxBTnoBEnhK4mDphh6ZtqmPskiM5C-gPsSnFWcxhRfWvHy4mtWoJdE9DeR1XaLneAzycHZxQr5aXEZCLdSl1DZ0apV_nmA6wYMLKnO1rajhIi4Cq4DPd3qEpdyCAPgcWts6RMRheaTX3Ev9F8" alt="Partenaire architecture"/>
+      <img class="h-7 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7CkyUhYBXnbpmtUFzH8ZbjybAIAamcpfvbZfRhhsPXx7RgTq4N_vW46M3fv8U1NvyYdBqQR_tZ3pKwVlJLMVzRqNG8F5T-6Cz9tFeZUpUhjmv4aCORw3Plv6gne7PnLQdIu9juy_V2oNx5FASMpc886AiYfMjHpr3hABFX4CHKdNOIpOZTLfTK6ty1UiuK9f4rGpGhKgfGYKDxCX6voEBdkdLfRoS-C9Ob_apPc6nrDzhHZrqhecC-2fiF0IBSj1di1c2vbqCq04" alt="Partenaire hospitality"/>
+      <img class="h-7 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0psXBfSSJ4UMxezr3bjAwWbEA1hAeaeYpFfH6ixUkq2rOd41g4YljcUwp3lXj32tBJxZzkjh9AdLuv9-3dttrx0tBZ6o_Kd4GhFu3eECTRScEluSBTPEtpXf34E_txzBW0AvjWwliImlcbQXg0QaA_C3y7o-vnDUUd8X4xcYPzLLmqdXzcx93y2JLQYTp5_NIaphOvhxPoWJwB49g25RTOQN9Utbfau4KnUt5MGqLsF_PFtXOS7x7JF9bsDko3KBkOHCts" alt="Cabinet juridique"/>
+      <img class="h-7 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1QeZ23C8GZYW7dIIFdvtQofWF6fsLlpTahqa3sYpyBtCm0Gpvj-y-dnZTxadEpx1qKC_j9wqlj07L-u_5xaBOcyBSJlOGkm9ht82uT8zYoavnw5gk2pJ8nMVvRkjMbCIFCRvyIKe31dOStUkh5dvMbaV8gOQvxaFbtmmDblFU3LdmhRVw9PSHl_LPbJlhGACIIUZOSPvR6qxIv0WJodxNoifwtQoKE3HyineEsG1CNIuwSJTT-6mS2tVHStFFcdd8efJdqbGuaFU" alt="Certification design"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CTA FINAL ═══════════════════════════════════ -->
+<section id="contact" class="py-24 md:py-32 relative overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIM5pXuXLyFugVaQgb9uI93w5sXd3CRswJh7gKw24vqifkQO5IyVtyDC2tOt8J_xsAfdPx0kSIw973olUKuIp3yyjdOTN3xPuecsXnWCF-owb7f7RxGN7CXyAvVyVS99Ub2OAzNGy26fpSPwaHM4rzUbnkA7EIKPBwa8uYFVRLvwa1Yfb6vGJwOnvBQ3d1MSrkR94sviGcjjePCQc78HWxQAyBCR0GzUi-U-_Xds1a3i6FHTMrPdxCv8zhCZswuitS5EyhLyjdrgQ" alt="Villa Bali CTA"/>
+    <div class="absolute inset-0 bg-primary/88"></div>
+  </div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 md:px-8 text-center">
+    <span class="text-tertiary-container font-medium tracking-widest text-xs uppercase mb-6 block">2 Lots Restants · Phase 1</span>
+    <h2 class="font-serif italic text-surface mb-4 leading-tight" style="font-size: clamp(2.2rem, 5vw, 4rem);">
+      Dans 6 mois,<br/>ce prix n'existera plus.
+    </h2>
+    <p class="text-surface/60 text-base mb-10 max-w-xl mx-auto leading-relaxed">
+      Recevez le dossier complet maintenant : plans architecturaux, projections financières sur 5 ans, structure juridique détaillée, et simulation de rendement personnalisée selon votre budget.
+    </p>
+    <div class="bg-surface rounded-2xl p-6 md:p-10 shadow-2xl text-left">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label class="text-xs font-bold uppercase text-on-surface-variant mb-2 block tracking-widest">Prénom & Nom</label>
+          <input class="w-full border-b border-outline-variant bg-transparent py-3 focus:outline-none focus:border-tertiary transition-all text-sm" placeholder="Jean Dupont" type="text"/>
+        </div>
+        <div>
+          <label class="text-xs font-bold uppercase text-on-surface-variant mb-2 block tracking-widest">Email</label>
+          <input class="w-full border-b border-outline-variant bg-transparent py-3 focus:outline-none focus:border-tertiary transition-all text-sm" placeholder="jean@investissement.com" type="email"/>
+        </div>
+        <div>
+          <label class="text-xs font-bold uppercase text-on-surface-variant mb-2 block tracking-widest">Téléphone</label>
+          <input class="w-full border-b border-outline-variant bg-transparent py-3 focus:outline-none focus:border-tertiary transition-all text-sm" placeholder="+33 6 XX XX XX XX" type="tel"/>
+        </div>
+        <div>
+          <label class="text-xs font-bold uppercase text-on-surface-variant mb-2 block tracking-widest">Budget d'investissement</label>
+          <select class="w-full border-b border-outline-variant bg-transparent py-3 focus:outline-none focus:border-tertiary transition-all text-sm text-on-surface-variant appearance-none">
+            <option value="">Sélectionner</option>
+            <option>$300k – $500k</option>
+            <option>$500k – $1M</option>
+            <option>$1M+</option>
+          </select>
+        </div>
+      </div>
+      <button class="w-full bg-primary text-on-primary py-4 rounded-full font-bold text-base hover:bg-primary-container transition-all active:scale-95 mb-4">
+        Recevoir le Dossier Complet — Gratuit et Confidentiel →
+      </button>
+      <p class="text-on-surface-variant text-xs text-center uppercase tracking-widest opacity-60">Aucune obligation · Réponse sous 24h · Dossier de 32 pages</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-stone-50 border-t border-teal-900/10">
+  <div class="w-full py-10 px-6 md:px-8 max-w-screen-2xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+      <div>
+        <div class="font-serif text-xl text-primary mb-1">BALI CURATED</div>
+        <p class="font-sans text-xs tracking-widest uppercase text-on-surface-variant/50">© 2024 Bali Curated Investments. Tous droits réservés.</p>
+      </div>
+      <div class="flex flex-wrap gap-6 items-center">
+        <a class="font-sans text-xs tracking-widest uppercase text-on-surface-variant/50 hover:text-tertiary transition-colors duration-300" href="#">Politique de Confidentialité</a>
+        <a class="font-sans text-xs tracking-widest uppercase text-on-surface-variant/50 hover:text-tertiary transition-colors duration-300" href="#">Mentions Légales</a>
+        <a class="font-sans text-xs tracking-widest uppercase text-on-surface-variant/50 hover:text-tertiary transition-colors duration-300" href="#">Disclosure Investissement</a>
+      </div>
+      <div class="flex gap-3">
+        <span class="material-symbols-outlined text-primary/30 cursor-pointer hover:text-tertiary transition-all">public</span>
+        <span class="material-symbols-outlined text-primary/30 cursor-pointer hover:text-tertiary transition-all">share</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function checkReveal() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        el.classList.add('visible');
+      }
+    });
+    const fills = document.querySelectorAll('.progress-fill');
+    fills.forEach(fill => {
+      const rect = fill.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        const target = fill.style.getPropertyValue('--target-width');
+        fill.style.width = target;
+      }
+    });
+  }
+  window.addEventListener('scroll', checkReveal, { passive: true });
+  window.addEventListener('load', checkReveal);
+  checkReveal();
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.style.borderBottomColor = 'rgba(191,200,200,0.3)';
+    } else {
+      header.style.borderBottomColor = 'transparent';
+    }
+  }, { passive: true });
+</script>
+</body>
+</html>
